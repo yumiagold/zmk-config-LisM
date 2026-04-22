@@ -13,7 +13,6 @@
 // ペリフェラル（split経由）のリスナーを有効化
 &peripheral_listener {
     status = "okay";
-    input-processors = <&zip_temp_layer 4 700>;
 };
 
 // セントラルのリスナーを有効化し、deviceを紐付け
@@ -30,12 +29,4 @@
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_scaler 1 16>;
     };
-};
-
-// ZMKの仕様上、ペリフェラルからのセンサーイベントを受け取るにはセントラル側でもセンサーが有効である必要があるため、
-// 右手のトラックボールと物理ピンが競合しないダミーピンを割り当ててエンコーダを有効化する。
-&encoder {
-    status = "okay";
-    a-gpios = <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    b-gpios = <&gpio1 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 };
