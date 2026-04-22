@@ -30,3 +30,11 @@
             <&zip_scroll_scaler 1 16>;
     };
 };
+
+// ZMKの仕様上、ペリフェラルからのセンサーイベントを受け取るにはセントラル側でもセンサーが有効に初期化される必要がある。
+// 右手のトラックボールと物理ピンが競合せず、かつ割り込みが機能する有効な空きピン(gpio0 2, 3)を割り当ててエンコーダを有効化する。
+&encoder {
+    status = "okay";
+    a-gpios = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    b-gpios = <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+};
