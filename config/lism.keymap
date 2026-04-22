@@ -97,7 +97,7 @@
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B                                           &kp N        &kp M        &kp COMMA    &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 F13         &lt 2 SPACE  &lt_to_layer_0 3 F14               &kp BACKSPACE  &lt 1 ENTER  &kp MINUS    &kp COLON  &kp SEMICOLON  &kp DEL
             >;
-            sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&encoder_kp A B>;
         };
 
         FUNCTION {
