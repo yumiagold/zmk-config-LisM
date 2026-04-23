@@ -17,6 +17,20 @@
     quick-tap-ms = <300>;
 };
 
+&mmv {
+    delay-ms = <20>;
+    trigger-period-ms = <5>;
+    time-to-max-speed-ms = <100>;
+    acceleration-exponent = <2>;
+};
+
+&msc {
+    delay-ms = <3>;
+    trigger-period-ms = <3>;
+    time-to-max-speed-ms = <100>;
+    acceleration-exponent = <0>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
