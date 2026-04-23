@@ -34,7 +34,7 @@ layers:
   - LCTRL
   - LEFT WIN
   - LEFT ALT
-  - {t: '&to_layer_0 F13', h: Layer 6}
+  - ''
   - {t: SPACE, h: Num}
   - {t: '&to_layer_0 F14', h: Arrow}
   - BS
@@ -42,7 +42,7 @@ layers:
   - '-'
   - ':'
   - ;
-  - DEL
+  - {t: '&to_layer_0 DEL', h: Layer 6}
   Function:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -292,7 +292,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -300,7 +300,7 @@ layers:
   - '&studio_unlock'
   - Boot
   - {t: ▽, type: trans}
-  - BT CLR ALL
+  - {t: BT CLR ALL, type: held}
   Layer 7:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
