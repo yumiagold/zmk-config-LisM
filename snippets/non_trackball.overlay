@@ -27,5 +27,6 @@
 };
 
 &sensors {
-    triggers-per-rotation = <12>;
+    // エンコーダを鈍感にする（少し触っただけでは反応しないように値を増やす）
+    triggers-per-rotation = <24>;
 };
