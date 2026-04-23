@@ -26,7 +26,8 @@
 
 &msc {
     delay-ms = <3>;
-    trigger-period-ms = <3>;
+    // スクロールイベントの発射間隔を長くし、1クリックで大量のスクロールが送られるのを防ぐ
+    trigger-period-ms = <20>;
     time-to-max-speed-ms = <100>;
     acceleration-exponent = <0>;
 };
