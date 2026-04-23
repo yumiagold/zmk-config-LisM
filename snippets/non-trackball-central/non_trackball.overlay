@@ -1,14 +1,20 @@
 #include "../non_trackball.overlay"
 
-// split経由のリスナーを有効化
+// 特定のデバイスだけでなく、全てのマウスの動きに強制反応させる
 &peripheral_listener {
     status = "okay";
-    input-processors = <&zip_temp_layer 4 700>;
+    /delete-property/ device;
+    
+    // カーソル移動量を正確に 75% (3/4) にスケールダウン
+    input-processors = 
+        <&zip_xy_scaler 3 4>,
+        <&zip_temp_layer 4 700>;
 
     scroller {
         layers = <5>;
+        // スクロール速度も現在の 75% に減速（1/16 × 3/4 = 3/64）
         input-processors = 
             <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_scaler 1 16>;
+            <&zip_scroll_scaler 3 64>;
     };
 };
