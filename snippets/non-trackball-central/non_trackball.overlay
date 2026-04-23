@@ -3,7 +3,6 @@
 // 特定のデバイスだけでなく、全てのマウスの動きに強制反応させる
 &peripheral_listener {
     status = "okay";
-    /delete-property/ device;
     
     // カーソル移動量はOS側で調整するため、scalerは削除
     input-processors = <&zip_temp_layer 4 700>;
