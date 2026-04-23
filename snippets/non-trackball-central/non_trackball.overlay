@@ -3,4 +3,12 @@
 // split経由のリスナーを有効化
 &peripheral_listener {
     status = "okay";
+    input-processors = <&zip_temp_layer 4 700>;
+
+    scroller {
+        layers = <5>;
+        input-processors = 
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_scaler 1 16>;
+    };
 };
