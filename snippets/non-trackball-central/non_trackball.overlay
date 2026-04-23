@@ -9,9 +9,9 @@
 
     scroller {
         layers = <5>;
-        // スクロール速度を現在の 50% に減速（1/16 × 1/2 = 1/32）
+        // スクロール速度を極端に遅くしてテスト（1/100）
         input-processors = 
             <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_scaler 1 32>;
+            <&zip_scroll_scaler 1 100>;
     };
 };
