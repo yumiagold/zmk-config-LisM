@@ -27,6 +27,6 @@
 };
 
 &sensors {
-    // エンコーダをさらに鈍感にする（元の10%の感度になるよう値を120に増やす）
-    triggers-per-rotation = <120>;
+    // デフォルトの感度（12）に戻す
+    triggers-per-rotation = <12>;
 };
