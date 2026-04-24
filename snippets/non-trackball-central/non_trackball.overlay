@@ -4,8 +4,8 @@
 &peripheral_listener {
     status = "okay";
     
-    // カーソル移動量はOS側で調整するため、scalerは削除
-    input-processors = <&zip_temp_layer 4 700>;
+    // カーソル移動量を75%にスケールダウン（3/4）
+    input-processors = <&zip_xy_scaler 3 4>, <&zip_temp_layer 4 700>;
 
     scroller {
         layers = <5>;
