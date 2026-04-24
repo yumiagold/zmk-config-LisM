@@ -1,5 +1,7 @@
 &encoder {
     status = "okay";
+    // EC12E2440301: 24パルス/回転 × 4クアドラチャ状態 = 96ステップ
+    steps = <96>;
 };
 
 &spi0 {
@@ -27,6 +29,6 @@
 };
 
 &sensors {
-    // デフォルトの感度（12）に戻す
-    triggers-per-rotation = <12>;
+    // 24ディテント/回転に合わせ、1物理クリック = 1スクロールイベント
+    triggers-per-rotation = <24>;
 };
