@@ -39,8 +39,8 @@ layers:
   - {t: '&to_layer_0 F13', h: Arrow}
   - BS
   - {t: ENTER, h: Function}
-  - '-'
   - ':'
+  - '-'
   - ;
   - {t: '&to_layer_0 DEL', h: Layer 6}
   Function:
