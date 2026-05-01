@@ -221,7 +221,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+←
   - PAGE UP
   - {type: held}
   - PAGE DOWN
