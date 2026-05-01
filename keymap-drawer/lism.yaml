@@ -36,13 +36,13 @@ layers:
   - LEFT ALT
   - ''
   - {t: SPACE, h: Num}
-  - {t: '&to_layer_0 F13', h: Arrow}
+  - {t: F13, h: Arrow}
   - BS
   - {t: ENTER, h: Function}
   - ':'
   - '-'
   - ;
-  - {t: '&to_layer_0 DEL', h: Layer 6}
+  - {t: DEL, h: Layer 6}
   Function:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -301,7 +301,7 @@ layers:
   - Boot
   - {t: ▽, type: trans}
   - {t: BT CLR ALL, type: held}
-  Layer 7:
+  Layer 7 (Zoom):
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
