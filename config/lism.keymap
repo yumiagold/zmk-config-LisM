@@ -153,7 +153,7 @@
         SCROLL {
             display-name = "Scroll";
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                         &kp LA(LEFT)  &kp PAGE_UP       &trans  &kp PAGE_DOWN  &trans
+&trans  &trans  &trans  &trans  &trans                                         &kp LA(LEFT)  &kp PAGE_UP       &trans  &kp PAGE_DOWN  &kp LA(RIGHT)
 &trans  &trans  &trans  &trans  &trans                                         &trans  &kp LC(LS(TAB))   &trans  &kp LC(TAB)    &trans
 &trans  &trans  &trans  &trans  &trans                                         &trans  &trans            &trans  &trans         &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                 &trans  &trans            &trans  &trans         &trans    &trans
